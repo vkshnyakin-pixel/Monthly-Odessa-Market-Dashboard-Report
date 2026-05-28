@@ -375,23 +375,13 @@
       color: var(--c-ink);
     }
 
-    #metric-demand,
-    #metric-price,
-    #metric-gap {
-      font-size: clamp(20px, 1.55vw, 30px);
+    #metric-demand {
+      font-size: clamp(22px, 2.1vw, 30px);
       line-height: 1.08;
       letter-spacing: -.03em;
-      max-width: 100%;
-      min-width: 0;
-      white-space: normal;
-      overflow-wrap: anywhere;
       word-break: normal;
-      hyphens: auto;
-    }
-
-    #metric-core-sales,
-    #metric-risk {
-      white-space: nowrap;
+      overflow-wrap: break-word;
+      max-width: 100%;
     }
 
     .metric-note { color: var(--c-ink-muted); font-size: 12px; line-height: 16px; }
@@ -515,9 +505,11 @@
   <div class="shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">Стратегічна аналітика ринку нерухомості Одеси</div>
         <h1>Monthly Odessa Real Estate Market Dashboard</h1>
-
+        <p class="subhead">
+          Січень–травень 2026. Інтерактивна HTML-панель первинного ринку житлової нерухомості Одеси та Одеського регіону
+          для інституційного читання: факти, динаміка, причинно-наслідкові зв’язки, обмеження даних і сценарії на 3–6 місяців.
+        </p>
       </div>
       <div class="stamp">
         <div class="stamp-grid">
@@ -857,16 +849,10 @@
       <section class="band">
         <div class="section-head">
           <h2>Методологія та джерела</h2>
-          <p>
-            Тут окремо зазначені припущення, розбіжності вибірок і джерела, щоб панель можна було читати як перевірювану аналітичну базу.
-          </p>
         </div>
         <div class="source-list">
           <div class="source-item">
             <strong>Primary Residential Market Matrix — Odessa | 2025-2026</strong>
-            <p>
-              Основне джерело для розрахункових продажів, залишків, проєктної структури та якісних нотаток щодо об’єктів.</a>
-            </p>
           </div>
           <div class="source-item">
             <strong>LUN: Odesa primary market page</strong>
@@ -976,7 +962,7 @@
           demandNote: "нижче лютого, але все ще суттєво вище квітнево-травневого режиму",
           risk: "4 / 10",
           riskNote: "найм’якший місяць періоду за відкритим воєнним фоном",
-          price: "підтримано",
+          price: "підтриманий попитом",
           priceNote: "комфорт-клас виглядав основним носієм ринку",
           gap: "високий",
           gapNote: "широкий попит не привів до широкого вибору справді придатної пропозиції",
