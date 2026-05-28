@@ -368,11 +368,28 @@
     }
 
     .metric-value {
-      font-size: clamp(26px, 3vw, 40px);
+      font-size: clamp(26px, 2.5vw, 38px);
       font-weight: 500;
-      line-height: 1;
+      line-height: 1.05;
       letter-spacing: -.04em;
       color: var(--c-ink);
+      max-width: 100%;
+      min-width: 0;
+      overflow: hidden;
+      overflow-wrap: anywhere;
+      hyphens: auto;
+    }
+
+    #metric-demand,
+    #metric-price,
+    #metric-gap {
+      font-size: clamp(24px, 2vw, 32px);
+      line-height: 1.08;
+      letter-spacing: -.035em;
+    }
+
+    #metric-price {
+      font-size: clamp(20px, 1.65vw, 28px);
     }
 
     #metric-demand {
@@ -962,7 +979,7 @@
           demandNote: "нижче лютого, але все ще суттєво вище квітнево-травневого режиму",
           risk: "4 / 10",
           riskNote: "найм’якший місяць періоду за відкритим воєнним фоном",
-          price: "підтриманий попитом",
+          price: "підтримано",
           priceNote: "комфорт-клас виглядав основним носієм ринку",
           gap: "високий",
           gapNote: "широкий попит не привів до широкого вибору справді придатної пропозиції",
